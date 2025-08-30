@@ -1,0 +1,23 @@
+/* Fonts */
+@font-face{
+    font-family: meow ;
+    src: url(/assesst/fonts/MeowScript-Regular.ttf);
+}
+@font-face {
+    font-family: FunnelSensItalic;
+    src: url(/assesst/fonts/FunnelSans-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: funnelSansVar;
+    src: url(/assesst/fonts/FunnelSans-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: SerifRegular;
+    src: url(/assesst/fonts/DMSerifText-Regular.ttf);
+}
+@font-face {
+    font-family: SerifItalic;
+    src: url(/assesst/fonts/DMSerifText-Italic.ttf);
+}
+
+/* ------- Main styles -------- */
