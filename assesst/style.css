@@ -25,31 +25,36 @@
     --primary : #4A4139;    /* text */
     --secondary : #4C433C;  /* footer product */
     --footer-bg : #47382a;  /* footer bg */
+    --main-bg : #F0ECE1;  /* main bg */
 }
 
 /* ------- Main styles -------- */
 .body{
+    position: relative;
     background-color: var(--background);
     margin: 0 auto;
     width: 100%;
+    z-index: 0;
+    height: 100vh;
+    z-index: 0;
 }
 .top-head-text{
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--secondary);
-    text-transform: uppercase;
     font-family: funnelSansVar ;
-    width: 100%;
-    display: block;
-    text-align: center;
+    font-size: 2rem;
     margin: 3rem  auto 0.5rem auto;
 }
 .top-head-cute-text{
+    font-family: meow ;
     font-size: 1.7rem;
+}
+.top-head-text,
+.top-head-cute-text {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    z-index: 2; 
     font-weight: 500;
     color: var(--secondary);
     text-transform: capitalize;
-    font-family: meow ;
     width: 100%;
     display: block;
     text-align: center;
@@ -59,8 +64,21 @@
     bottom: 30%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1;
+    z-index: 0;
     height: 10rem;
     width: 100%;
     background-color: var(--footer-bg) ;
+}
+.main-container {
+    position: relative;
+    width: 80%;
+    background-color: #F0ECE1 ;
+    background-image: url(/assesst/main-page-images/background-elements.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 40rem;
+    z-index: 2;
+    margin: 1.5rem auto;
+    box-shadow: 5px 9px 30px -6px rgba(0,0,0,0.75);
 }
