@@ -24,7 +24,43 @@
     --background : #DACABD;  /* background */
     --primary : #4A4139;    /* text */
     --secondary : #4C433C;  /* footer product */
-    --footer-bg : #9B785A;  /* footer bg */
+    --footer-bg : #47382a;  /* footer bg */
 }
 
 /* ------- Main styles -------- */
+.body{
+    background-color: var(--background);
+    margin: 0 auto;
+    width: 100%;
+}
+.top-head-text{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-family: funnelSansVar ;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 3rem  auto 0.5rem auto;
+}
+.top-head-cute-text{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--secondary);
+    text-transform: capitalize;
+    font-family: meow ;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.rectangle-bg-color{
+    position: fixed;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    height: 10rem;
+    width: 100%;
+    background-color: var(--footer-bg) ;
+}
