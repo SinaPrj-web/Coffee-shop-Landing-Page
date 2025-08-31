@@ -19,5 +19,12 @@
     font-family: SerifItalic;
     src: url(/assesst/fonts/DMSerifText-Italic.ttf);
 }
+/* colors  */
+:root{
+    --background : #DACABD;  /* background */
+    --primary : #4A4139;    /* text */
+    --secondary : #4C433C;  /* footer product */
+    --footer-bg : #9B785A;  /* footer bg */
+}
 
 /* ------- Main styles -------- */
