@@ -32,6 +32,7 @@
     --main-bg : #F0ECE1;  /* main bg */
     --product-bg : #9B785A;  /* product bg */
     --price-bg : #D8B192;     /* product bg */
+    --white : #fff;
 }
 
 /* ------- Main styles -------- */
@@ -80,10 +81,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 40rem;
-    z-index: 2;
+    max-height: 60rem;
+    z-index: 1;
     margin: 1rem auto 0 auto;
     box-shadow: 5px 9px 30px -6px rgba(0,0,0,0.75);
+    overflow: hidden;
 }
 
 /* ------- Header styles -------- */
@@ -249,7 +251,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    min-width: 14rem;
     
 }
 .product-img{
@@ -259,13 +261,21 @@
     left: -31%;
 
 }
+#product-img-2 {
+    max-width: 6rem;
+    left: -23%;
+}
+#product-img-3 {
+    max-width: 6rem;
+    left: -23%;
+}
 .produc-info{
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     text-align: center;
-    max-width: 10rem;
+    min-width: 8rem;
     background-color: var(--product-bg);
     color: #fff;
     font-size: 1.2rem;
@@ -297,4 +307,84 @@
     font-family: SerifRegular ;
     right: 4%;
     top: 65%;
+}
+/* --------- footer style ----------- */
+
+.footer-section{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 5%;
+    right: 10%;
+    left: 10%;
+    gap: 3rem;
+    width: 80%;
+}
+.footer-bg{
+    width: 80%;
+    height: 7rem;
+    margin: 0 auto;
+    background-color: var(--product-bg);
+    border-radius: 71px 71px 0 0;
+    margin: 5rem auto 0 auto;
+    
+}
+.item-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 20rem;
+    height: auto;
+    background-color: var(--footer-bg);
+
+}
+.item-img-container{
+    
+}
+.item-img-container img{
+    width: 3.5rem;
+    height: auto;
+    margin: 0 1rem;
+}
+.item-info{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0.7rem;
+
+}
+.item-info h3{
+    margin: 0;
+    color: var(--white) ;
+    font-family: sat ;
+    word-spacing: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.item-info h4{
+    margin: 0;
+    color: var(--white);
+    font-weight: 100;
+    font-size: 0.8rem;
+    font-family: SerifItalic;
+    padding: 0 0 1rem 0;
+}
+.rating{
+    color: var(--white);
+    background-color: var(--price-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    position: absolute;
+    bottom: -28px;
+    right: 30%;
+    min-width: 50%;
+
+}
+.rating i {
+    height: auto;
+    font-size: 0.8rem;
+    
 }
