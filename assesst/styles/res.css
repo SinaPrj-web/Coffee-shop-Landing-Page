@@ -5,4 +5,23 @@
     .links-container{
         display: none;
     }
+    .topic-links-container{
+        display: flex;
+        align-items: center;
+    }
+    .header-section {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .search-container{
+        width: 30%;
+        display: none;
+    }
+    .search-container input {
+        width: 80%;
+    }
+    #nav-icon1 {
+        display: block;
+    }
 }
