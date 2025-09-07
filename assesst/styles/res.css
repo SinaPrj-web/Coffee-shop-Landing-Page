@@ -1,0 +1,8 @@
+@media (max-width: 480px) {
+    .logo-container{
+        display: none;
+    }
+    .links-container{
+        display: none;
+    }
+}
