@@ -6,13 +6,17 @@
         display: none;
     }
     .topic-links-container{
+        position: absolute;
         display: flex;
         align-items: center;
+        top: 0;
     }
     .header-section {
+        position: relative;
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
     .search-container{
         width: 30%;
@@ -22,6 +26,12 @@
         width: 80%;
     }
     #nav-icon1 {
+        display: block;
+    }
+    .side-bar-container{
+        display: block;
+    }
+    .side-bar-menu {
         display: block;
     }
 }

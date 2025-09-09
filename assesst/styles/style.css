@@ -347,9 +347,6 @@
     background-color: var(--footer-bg);
 
 }
-.item-img-container{
-    
-}
 .item-img-container img{
     width: 3.5rem;
     height: auto;
@@ -398,5 +395,29 @@
 }
 
 #nav-icon1 {
+    display: none;
+}
+
+.side-bar-container {
+    position: absolute;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    display: none;
+    
+}
+.side-bar-menu {
+    position: relative;
+    height: 100vh;
+    background-color: var(--price-bg);
+    width: 10rem;
+    display: inline-block;
+    right: 10rem;
+    transition: all 0.15s ease-in ;
     display: none;
 }
